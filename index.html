@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html long="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewsport" content="width=device-width, initial-scale=1.0">
+    <title>Football Positions</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <button class="position-button" onclick="showPosition('Goalkeeper')">Goalkeeper (GK)</button>
+    <button class="position-button" onclick="showPosition('Center-back')">Center-Back (CB)</button>
+    <button class="position-button" onclick="showPosition('Full-Backs')">Full-Backs Left-Back (LB) and Right-Back (RB)</button>
+    <button class="position-button" onclick="showPosition('Wing-Back')">Wing-Back Left Wing-Back (LWB) and Right Wing-Back (RWB)</button>
+    <button class="position-button" onclick="showPosition('Defensive Midfielder')">Defensive Midfielder (CDM)</button>
+    <button class="position-button" onclick="showPosition('Central Midfielder')">Central Midfielder (CM)</button>
+    <button class="position-button" onclick="showPosition('Attacking Midfielder')">Attacking Midfielder (CAM)</button>
+    <button class="position-button" onclick="showPosition('Wide Midfielder')">Wide Midfielder Left Midfielder (LM) and Right Midfielder (RM)</button>
+    <button class="position-button" onclick="showPosition('Striker')">Striker (ST)</button>
+    <button class="position-button" onclick="showPosition('Center Foward')">Center Forward (CF)</button>
+    <button class="position-button" onclick="showPosition('Winger')">Winger (Left Winger (LW) and Right Winger (RW))</button>
+   
+
+    <div class="display-area" id="display-area">
+        <img id="Position-img" src="" alt="image of the Position">
+        <h2 id="Position-name">not selected</h2>
+        <p id="Position-description">none</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
