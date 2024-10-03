@@ -7,25 +7,79 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <button class="position-button" onclick="showPosition('goalkeeper')">Goalkeeper (GK)</button>
-    <button class="position-button" onclick="showPosition('defender')">Center-Back (CB)</button>
-    <button class="position-button" id="none" onclick="showPosition('Full-Backs')">Full-Backs Left-Back (LB) and Right-Back (RB)</button>
-    <button class="position-button" id="none" onclick="showPosition('Wing-Back')">Wing-Back Left Wing-Back (LWB) and Right Wing-Back (RWB)</button>
-    <button class="position-button" onclick="showPosition('Defensive_midfielder')">Defensive Midfielder (CDM)</button>
-    <button class="position-button" onclick="showPosition('midfielder')">Central Midfielder (CM)</button>
-    <button class="position-button" onclick="showPosition('Attacking_midfielder')">Attacking Midfielder (CAM)</button>
-    <button class="position-button" onclick="showPosition('Wide_Midfielder')">Wide Midfielder Left Midfielder (LM) and Right Midfielder (RM)</button>
-    <button class="position-button" onclick="showPosition('Striker')">Striker (ST)</button>
-    <button class="position-button" onclick="showPosition('Center_Forward')">Center Forward (CF)</button>
-    <button class="position-button" onclick="showPosition('Winger')">Winger (Left Winger (LW) and Right Winger (RW))</button>
-   
+    <div class="header">
+        <ul>
+            <li><a class="active" href="#home">home</a> </li>
+            <li><a href="#news">news</a> </li>
+            <li><a href="#contact">contact</a> </li>
+            <li><a href="#about">about</a> </li>
+        
+            
+        </ul>
+
+    </div>
+    
+    <div class="field">
+        <!-- Central lines and circle -->
+        <div class="central-line"></div>
+        <div class="central-circle"></div>
+    
+        <!-- Penalty areas -->
+        <div class="penalty-area left"></div>
+        <div class="penalty-area right"></div>
+    
+        <!-- Goal areas -->
+        <div class="goal-area left"></div>
+        <div class="goal-area right"></div>
+    
+        <!-- Goals -->
+        <div class="goal left"></div>
+        <div class="goal right"></div>
+
+        <button class="position-button" id="Gk" onclick="showPosition('Goalkeeper')">GK</button>
+        <button class="position-button" id="CB" onclick="showPosition('Defender')">CB</button>
+        <button class="position-button" id="Cb" onclick="showPosition('Center_Back')">Cb</button>
+        <button class="position-button" id="LB" onclick="showPosition('Left_Back')">LB</button>
+        <button class="position-button" id="RB" onclick="showPosition('Right_Back')"> RB</button>
+        <button class="position-button" id="RWB" onclick="showPosition('Right_Wing_Back')"> RWB</button>
+        <button class="position-button" id="CDM" onclick="showPosition('Defensive_midfielder')">CDM</button>
+        <button class="position-button" id="CM" onclick="showPosition('midfielder')">CM</button>
+        <button class="position-button" id="CAM" onclick="showPosition('Attacking_midfielder')">CAM</button>
+        <button class="position-button" id="RM" onclick="showPosition('Right_Midfielder')">RM</button>
+        <button class="position-button" id="ST" onclick="showPosition('Striker')">ST</button>
+        <button class="position-button" id="CF" onclick="showPosition('Center_Forward')">CF</button>
+        <button class="position-button" id="LW" onclick="showPosition('Left_Winger')">LW</button>
+        <button class="position-button" id="LWB" onclick="showPosition('Left_Wing_Back')">LWB</button> 
+        <button class="position-button" id="RW" onclick="showPosition('Right_Winger')">RW</button>
+        <button class="position-button" id="LM" onclick="showPosition('Left_Midfielder')">LM</button>
+       
+
+    </div>
+
+    <div class="buttons">
+       
+        
+       
+       
+
+       
+    </div>    
+    
 
     <div class="display-area" id="display-area">
         <img id="Position-img" src="" alt="image of the Position">
         <h2 id="Position-name">not selected</h2>
         <p id="Position-description">none</p>
     </div>
+
+    <footer>
+         <p>Author: Joe Pedro Garlipp<br>
+        <a href="mailto:joepedro93@gmail.com">Email</a><br>
+        <a href="https://wa.me/353852125147">Whatsapp</a>
+        </p>
+    </footer>
     
     <script src="script.js"></script>
 </body>
-</html>
+</html
+

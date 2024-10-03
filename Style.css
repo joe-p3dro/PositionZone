@@ -1,26 +1,64 @@
 body{
-    background-color: rgb(183, 179, 177);
+    background-color:#37202B;
+    margin:0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#20221E ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: black;
+}
+.active {
+    background-color: rgb(11, 128, 238);
 }
 
 .position-button{
     display: inline-block ;
+    width: 55px; ;
+    height: 55px; ;
     margin: 10px;
     padding: 10px;
-    background-color: green;
+    background-color: #254D25;
     color: white;
     border: 2px;
     border-color:black ;
     cursor: pointer;
-    border-radius: 25%;
+    border-radius: 30px;
 }
 .position-button:hover{
-    background-color: rgb(1, 61, 1);
+    background-color: rgb(2, 41, 2);
 }
 .display-area{
+    margin: auto;
     margin-top: 20px;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 20%;
     max-width: 400px;
+    text-align: center;
+   
+  
+
 }
 .display-area img{
     max-width:100% ;
@@ -28,6 +66,209 @@ body{
 }
 
 #none:hover{
-    background-color: rgb(103, 103, 103);
+    background-color: rgb(0, 0, 0);
+}
+
+.header{
+    margin-top: 0%;
+
+}
+
+.buttons{
+    margin-top: 20px;
+    
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+footer{
+    text-align: center;
+    overflow:hidden;
+    width:100%;
+    padding-top: 3px;
+    margin:0;
+    color: black;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    background-color:#20221E;
+
+}
+
+
+.field {
+    top: 100px;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: #228B22;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+
+#Gk{
+     position: absolute;
+     top: 308px;
+     left: 20px;
+     }
+
+#CB{
+    position: absolute;
+    top: 200px;
+    left: 255px;
+}
+#Cb{
+    position: absolute;
+    top: 415px;
+    left: 255px;
+}
+#LB{
+    position: absolute;
+    top: 600px;
+    left: 270px;
+}
+#RB{
+    position: absolute;
+    top: 20px;
+    left: 270px;
+    }
+    #RWB{
+        position: absolute;
+        top: 20px;
+        left: 500px;
+        }
+        #LWB{
+            position: absolute;
+            top: 600px;
+            left: 500px;
+            }
+            
+    #CM{
+        position: absolute;
+        top: 308px;
+        left: 910px;
+        }
+        #CDM{
+            position: absolute;
+            top: 308px;
+            left: 500px;
+            }
+            #CAM{
+                position: absolute;
+                top: 308px;
+                left: 1300px;
+                }
+                #LM{
+                    position: absolute;
+                    top: 600px;
+                    left: 910px;
+                    }
+
+                    #RM{
+                        position: absolute;
+                        top: 20px;
+                        left: 910px;
+                        }
+                #CF{
+                    position: absolute;
+                    top: 308px;
+                    left: 1500px;
+                    }
+                    #LW{
+                        position: absolute;
+                        top: 600px;
+                        left: 1350px;
+                        }
+                        #RW{
+                            position: absolute;
+                            top: 20px;
+                            left: 1350px;
+                            }
+                            #ST{
+                                position: absolute;
+                                top: 308px;
+                                left: 1700px;
+                                }
+/* Central lines */
+.central-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: white;
+}
+
+.central-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+/* Penalty areas */
+.penalty-area {
+    position: absolute;
+    width: 250px;
+    height: 390px;
+    border: 5px solid white;
+}
+
+.penalty-area.left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.penalty-area.right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/* Goal areas */
+.goal-area {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    border: 5px solid white;
+}
+
+.goal-area.left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.goal-area.right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/* Goal markings */
+.goal {
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    background-color: white;
+}
+
+.goal.left {
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+}
+
+.goal.right {
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
 }
 
